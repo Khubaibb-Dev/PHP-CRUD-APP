@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: linear-gradient(purple,slateblue);
+            height: 100vh;
+        }
+        /* .container{
+            background-color: slateblue;
+            border-style: solid;
+            border-color: navy;
+            height: 700px;
+            margin: auto;
+            width: 500px;
+            border-radius: 40px;
+            border-width: 10px;
+            margin-top: 120px;
+        } */
+         .container{
+            background-color: slateblue;
+            color: rgb(197, 195, 216);
+            border-width: 10px;
+            border-style: solid;
+            border-color: navy;
+            border-radius: 30px;
+            width: 350px;
+            height: 700px;
+            text-align: center;
+            margin: auto;
+            margin-top: 150px;
+            padding: 50px;
+
+
+
+
+
+
+
+
+
+        }
+         label {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            /* margin-bottom: 50px; */
+
+        }
+
+        input {
+            height: 35px;
+            width: 200px;
+            border-radius: 8px;
+        }
+
+        h1 {
+            font-size: larger;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding-bottom: 20px;
+        }
+
+        button {
+            border-radius: 8px;
+            height: 40px;
+            padding: 10px 20px 10px 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: navy;
+            background-color: rgb(157, 149, 214);
+            font-size: small    ;
+
+        }
+        .gender{
+            margin: 0;
+            padding: 0 ;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .gender input{
+            width: 25px;
+            height: 15px;
+        }
+        
+        select{
+            height: 35px;
+            width: 200px;
+            border-radius: 8px;
+            /* border-width: 5px; */
+            border-style: solid;
+            border-color: black;
+
+        }
+        #genderspan{
+             font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section class="container">
+              <form>
+        <h1>Personal Informartion</h1>
+
+        <!-- first name -->
+        <label for="first name">First Name:</label><br><br>
+        <input type="text" name="first name" placeholder="  Enter Your First Name"><BR></BR>
+        <!-- last name -->
+        <label for="last name">Last Name:</label><br><br>
+        <input type="text" name="last name" placeholder="  Enter Your Last Name"><BR></BR>
+        <!-- email -->
+        <label for="email">E-mail:</label><br><br>
+        <input type="email" name="email" placeholder="  Enter Your E-mail Address"><BR></BR>
+        <!-- phone -->
+        <label for="phone">Phone Number:</label><br><br>
+        <input type="tel" name="phone" placeholder="  Enter Your Phone Number"><BR></BR>
+        
+            <label for="city">City:</label><br><br>
+            <select name="city" id="city">
+                <option value="" disabled selected>Select City  </option>
+                <option value="khi">Karachi</option>
+                <option value="lhr">Lahore</option>
+                <option value="isl">Islamabad</option>
+            </select><br><br>
+            
+        
+        <!-- gender -->
+         <!-- <label for="gender">Gender</label> -->
+          <span id="genderspan">Select Gender:</span>
+         <div class="gender"><br>
+         <!-- <label for="gender">Gender:</label> -->
+         <input id="male"  type="radio" name="Gender">
+         <label for="male"> Male</label>
+         <input id="female"  type="radio" name="Gender">
+         <label for="female"> Female</label>
+         <input id="others"  type="radio" name="Gender">
+         <label for="others"> Others</label>
+         <!-- <input type="radio" name="Gender">Female
+         <input type="radio" name="Gender">Others --></div>
+<br>
+         
+
+        <button>Submit</button>
+    </form> 
+
+        </section>
+    </main>
+</body>
+</html>
